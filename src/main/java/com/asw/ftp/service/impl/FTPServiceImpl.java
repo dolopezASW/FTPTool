@@ -8,6 +8,7 @@ import java.io.OutputStream;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import com.asw.ftp.exception.FTPRuntimeException;
 import com.asw.ftp.service.FTPService;
@@ -19,9 +20,10 @@ import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 
+@Service
 public class FTPServiceImpl implements FTPService {
 	
-	Logger logger = LoggerFactory.getLogger(FTPRuntimeException.class);
+	Logger logger = LoggerFactory.getLogger(FTPServiceImpl.class);
 	
 	/**
 	 * Crea el canal de conexion con el servidor FTP
@@ -85,7 +87,7 @@ public class FTPServiceImpl implements FTPService {
 
 		String nombreMetodo = "getDocument()";
 
-		String localFilePath = "";
+		String localFilePath = "/tmp/temp/";
 		String remoteFilePath = filePath;
 		ChannelSftp channelSftp = null;
 		OutputStream outputStream;
