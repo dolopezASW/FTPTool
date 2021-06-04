@@ -9,7 +9,7 @@
 		<version>2.5.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.asw.ftp</groupId>
+	<groupId>io.github.dolopezASW</groupId>
 	<artifactId>AswFTPTool</artifactId>
 	<version>1.0</version>
 	<name>AswFTPTool</name>
