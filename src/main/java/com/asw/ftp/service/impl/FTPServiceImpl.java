@@ -77,9 +77,9 @@ public class FTPServiceImpl implements FTPService {
 	
 	/**
 	 * Devuelve el documento en forma de arreglo de bytes
-	 * 
-	 * @throws Exception Si no encuentra el archivo o no puede conectarse con
-	 *                          el servidor FTP, lanza una excepcion
+	 * Si no encuentra el archivo o no puede conectarse con
+	 * el servidor FTP, lanza una excepcion
+	 * @throws Exception 
 	 * @throws IOException
 	 */
 	@Override
